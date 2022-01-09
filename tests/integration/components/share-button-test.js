@@ -4,7 +4,6 @@ import { render, find } from '@ember/test-helpers';
 import Service from '@ember/service';
 import { hbs } from 'ember-cli-htmlbars';
 
-
 class MockRouterService extends Service {
   get currentURL() {
     return '/foo/bar?baz=true#some-section';
