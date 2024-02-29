@@ -1,0 +1,14 @@
+<ul>
+  <li>
+    <LinkTo @route="task" @query={{hash tag="tag1"}}>tag1</LinkTo>
+  </li>
+  <li>
+    <LinkTo @route="task" @query={{hash tag="tag2"}}>tag2</LinkTo>
+  </li>
+</ul>
+
+<span>{{this.tag}}</span>
+
+{{!-- {{component "task-list" tag=this.tag}} --}}
+
+<TaskList @tag={{this.tag}} />
